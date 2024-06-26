@@ -67,7 +67,7 @@ colorOptions.forEach(option => {
         console.log("CHANGED");
         const file = event.target.files[0];
         if(file.size > fileuploadsizeinMB *1024 *1024){
-            alert("Maximum file size allowed is 5MB. Try with smaller size file");
+            alert(`Maximum file size allowed is ${fileuploadsizeinMB}MB. Try with smaller size file`);
             fileInput.value='';
             return;
         }
