@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #E6F2FF;
     margin: 0;
     padding: 0;
@@ -19,22 +19,36 @@ body {
     height: 100vh;
     width: 100vh;
     position: relative;
-    
 }
 
+.custom-actions h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.custom-actions h3 {
+    font-size: 18px;
+    /* margin-top: -14px; */
+}
+.custom-actions p {
+    font-size: 15px;
+    margin-top: -14px;
+}
+#lower-p p{
+    font-size: 12px;
+    margin-top: 10px; 
+}
 .logo-preview {
-    position: absolute;
-    top: 60%;
-    left: 45%;
+    position: relative;
+    top: 130px;
+    right: 225px;
 }
 
-
-.umbrella-preview{
+/* .umbrella-preview{
     z-index: 0;
 }
 .logo-preview{
     z-index: 1;
-}
+} */
 
 img {
     width: 400px;
@@ -119,30 +133,44 @@ img {
 .color-pink { background-color: pink; }
 
 .upload-action {
-   display: flex;
+   /* display: flex;
    margin-top: 10px;
-   color: black;
+   color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+
 
 .button-color-option {
     display: flex;
-    width: 100%;
-    height: 30px;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    bottom: 2px;
+    /* right: 70px; */
+    
 }
-.button-color-option:hover {
+/* .upload-action:hover {
     background-color: gray;
     transition: transform 0.1s;  
-    /* transform: scale(0.9); */
- }
+    transform: scale(0.9); 
+ } */
+  .uploadicon:hover{
+    transition: transform 0.1s;  
+    transform: scale(1.5);
+  }
 .uploadicon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin-top: 5px;
     margin-left: 5px;
-    color:white;
+    fill:white;
 }
 
 .upload {
@@ -170,8 +198,8 @@ img {
 
 .loading-spinner2 {
     display: none; /* Hide the spinner initially */
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     /* border: 5px solid lightgray;
     border-top: 5px solid blue;
     border-radius: 50%; */
@@ -183,4 +211,45 @@ img {
     45% { transform: rotate(360deg); fil :var(--svg-color, white); }
     55% { transform: rotate(360deg); fill : var(--svg-color, white);}
     100% { transform: rotate(720deg); fill : var(--svg-color, white);}
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.file-remove {
+    display: flex;
+    position: relative;
+    /* left: 60px; */
+    bottom: 1px;
+    align-items: center;
+}
+
+#fileName {
+    display: block;
+    /* max-width: 80%; */
+    flex-grow: 1;
+    margin-right: 10px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(324px - 80px);
+    
+}
+
+.remove-file {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+@keyframes expandCompress {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.expand-compress {
+    animation: expandCompress 1s ease-in-out;
 }

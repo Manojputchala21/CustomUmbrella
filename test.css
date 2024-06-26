@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-icon {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.upload-icon svg {
+    fill: #007bff;
+    width: 24px;
+    height: 24px;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+}
+
+#fileName {
+    margin-right: 10px;
+    color: #333;
+}
+
+.remove-file {
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 18px;
+}
