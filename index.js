@@ -2,7 +2,7 @@ const colorOptions = document.querySelectorAll('.color-option');
 const fileuploadsizeinMB=5
 let reader;
 let uploadTimeout;
-// Color customs
+// Custom color toggeling
 colorOptions.forEach(option => {
     option.addEventListener('click', function() {
         const color = this.getAttribute('bg-color');
@@ -31,7 +31,7 @@ colorOptions.forEach(option => {
 
         umbrellaimg.style.display='none';
 
-
+// Simulating upload action
         setTimeout(function(){
             loadingSpinner.style.display = 'none';
             
@@ -54,7 +54,7 @@ colorOptions.forEach(option => {
     });
 });
 
-//  Logo upload 
+//  Logo upload actions
 // document.addEventListener('DOMContentLoaded', function() {
     console.log("inside upload");
     const fileInput = document.getElementById('fileInput');
@@ -118,7 +118,7 @@ colorOptions.forEach(option => {
 
 
 
-
+// logo remove action
 document.getElementById('removeFile').addEventListener('click', function() {
     const previewImage = document.getElementById('previewImage');
     const umbrellaimg = document.querySelector('.umbrella-preview img');
