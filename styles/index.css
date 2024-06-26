@@ -43,12 +43,7 @@ body {
     right: 225px;
 }
 
-/* .umbrella-preview{
-    z-index: 0;
-}
-.logo-preview{
-    z-index: 1;
-} */
+
 
 img {
     width: 400px;
@@ -60,25 +55,6 @@ img {
     height: 50px;
 }
 
-/* .umbrella-component {
-    position: relative;
-}
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: auto;
-    z-index: 1;
-}
-#previewImage {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 250px; 
-    left: 180px;
-    z-index: 2; 
-} */
 
 .custom-action-component{
     display: flex;
@@ -92,16 +68,7 @@ img {
     display: flex;
     gap: 10px; 
 }
-/* .color-option {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-.color-option:hover {
-    transform: scale(1.1);
-} */
+
 
 .color-option {
     width: 25px;
@@ -156,11 +123,7 @@ img {
     /* right: 70px; */
     
 }
-/* .upload-action:hover {
-    background-color: gray;
-    transition: transform 0.1s;  
-    transform: scale(0.9); 
- } */
+
   .uploadicon:hover{
     transition: transform 0.1s;  
     transform: scale(1.5);
@@ -180,7 +143,7 @@ img {
 }
 
 .loading-spinner {
-    display: none; /* Hide the spinner initially */
+    display: none;
     width: 70px;
     height: 70px;
     /* border: 5px solid lightgray;
@@ -197,7 +160,7 @@ img {
 }
 
 .loading-spinner2 {
-    display: none; /* Hide the spinner initially */
+    display: none; 
     width: 20px;
     height: 20px;
     /* border: 5px solid lightgray;
